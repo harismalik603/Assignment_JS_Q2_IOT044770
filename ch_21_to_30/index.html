@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a;
+        a = prompt("Enter number in float.");
+        a = parseFloat(a);
+        alert("you enter : " + a);
+        a = Math.ceil(a);
+        alert("After round of 'a' towards high value : " + a);
+        var b;
+        b = prompt("enter some text : ");
+        var c;
+        c = b.slice(0, 4);
+        var d = " ";
+        for (var i = c.length; i > 0; i--) {
+            d += (c.slice(i - 1, i));
+            console.log(d);
+        }
+        alert(d);
+    </script>
+</body>
+
+</html>

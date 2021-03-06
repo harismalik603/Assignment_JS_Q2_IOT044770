@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var course;
+        var a = [];
+        var b = 0;
+        for (var i = 0; i < 5; i++) {
+            a[i] = parseInt(prompt(" Enter course marks :"));
+            b = a[i] + b;
+        }
+        alert(" you got " + b + " marks.");
+        var c;
+        c = b * 100 / 500;
+        alert(" you got " + c + "%.");
+        c = Math.round(c);
+        switch (true) {
+            case (c <= 100 && c >= 90):
+                console.log("You Got  A+ Grade");
+                break;
+            case (c <= 89 && c >= 75):
+                console.log("You Got  A Grade");
+                break;
+            case (c <= 74 && c >= 60):
+                console.log("You Got  B Grade");
+                break;
+            case (c <= 59 && c >= 45):
+                console.log("You Got  C Grade");
+                break;
+            case (c <= 44 && c >= 30):
+                console.log("You Got  D Grade");
+                break;
+            case (c <= 29 && c >= 0):
+                console.log("You Got  F Grade");
+                break;
+            default:
+                console.log('not work');
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

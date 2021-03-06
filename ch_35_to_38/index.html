@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function ok(a) {
+            var a;
+            var b = a.split(" ");
+            for (var i = 0; i < b.length; i++) {
+                b[i] = b[i][0].toUpperCase() + b[i].substr(1);
+            }
+            a = b.join(" ");
+            return a;
+        }
+        var inp = prompt("Enter sentense: ");
+        var n = ok(inp);
+        console.log(n);
+
+        //2nd part now:
+        var c = parseInt(prompt("Enter Number: "));
+
+        function ok2(c) {
+            if (c <= 1) {
+                return 1;
+            } else {
+                return c * ok2(c - 1);
+            }
+        }
+        var d = ok2(c);
+        console.log("factorial is :" + d);
+
+        //logic part
+
+        var value = multiply(4, 3, 6);
+        console.log("value", value);
+
+        function add(a, b) {
+            var z = a + b;
+            return z;
+        };
+
+        function multiply(a, b, c) {
+            var z = a * add(b, c);
+            return z;
+        };
+
+        console.log("course", course);
+        console.log("z", z);
+    </script>
+</body>
+
+</html>
